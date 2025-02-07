@@ -30,18 +30,23 @@
       <h2 class="text-4xl lg:text-5xl font-semibold mb-4">Auto Ollama Docker Compose Setup</h2>
       <p class="text-lg lg:text-xl leading-7 mb-8">Streamline your Ollama deployments using Docker Compose. Dive into a containerized environment designed for simplicity and efficiency.</p>
       <h3 class="text-2xl lg:text-3xl font-semibold mb-10">Tools</h3>
-      <div class="grid grid-cols-3 gap-4 justify-center">
+      <div class="grid grid-cols-2 gap-4 justify-center">
+
         <div class="flex flex-col items-center">
-          <a href="http://localhost:8080" class="bg-blue-500 text-white w-16 h-16 flex items-center justify-center rounded-full text-2xl font-bold hover:bg-blue-700 transition duration-300">OUI</a>
-          <span class="mt-2 text-sm">Open WebUI</span>
+          <a href="http://192.168.0.12:8081" class="bg-blue-500 text-white w-16 h-16 flex items-center justify-center rounded-full text-2xl font-bold hover:bg-blue-700 transition duration-300">OUI</a>
+          <span class="mt-2 text-sm">Open WebUI - CPU</span>
         </div>
         <div class="flex flex-col items-center">
-          <a href="http://localhost:11434" class="bg-green-500 text-white w-16 h-16 flex items-center justify-center rounded-full text-2xl font-bold hover:bg-green-700 transition duration-300">O</a>
-          <span class="mt-2 text-sm">Ollama</span>
+          <a href="http://192.168.0.12:8080" class="bg-blue-500 text-white w-16 h-16 flex items-center justify-center rounded-full text-2xl font-bold hover:bg-blue-700 transition duration-300">OUI</a>
+          <span class="mt-2 text-sm">Open WebUI - GPU</span>
         </div>
         <div class="flex flex-col items-center">
-          <a href="http://localhost:8000" class="bg-red-500 text-white w-16 h-16 flex items-center justify-center rounded-full text-2xl font-bold hover:bg-red-700 transition duration-300">AC</a>
-          <span class="mt-2 text-sm">App Container</span>
+          <a href="http://192.168.0.12:7868" class="bg-green-500 text-white w-16 h-16 flex items-center justify-center rounded-full text-2xl font-bold hover:bg-green-700 transition duration-300">O</a>
+          <span class="mt-2 text-sm">Ollama - CPU</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <a href="http://192.168.0.12:7869" class="bg-green-500 text-white w-16 h-16 flex items-center justify-center rounded-full text-2xl font-bold hover:bg-green-700 transition duration-300">O</a>
+          <span class="mt-2 text-sm">Ollama - GPU</span>
         </div>
       </div>
     </div>
@@ -63,7 +68,7 @@
           <h3 class="text-2xl font-semibold mb-4 text-black">Flexible Development</h3>
           <p class="text-black">Includes a development container for testing and experimentation, supporting both Docker and virtual environments.</p>
           <p class="py-8 text-black">Auto Ollama includes test Python scripts which utilize langchain to programmatically use the Ollama API.</p>
-          <a href="http://localhost:8000" class="bg-red-500 text-white px-8 py-3 my-3 rounded-full hover:bg-red-700 transition duration-300">App Container</a>
+          <a href="http://192.168.0.12:8000" class="bg-red-500 text-white px-8 py-3 my-3 rounded-full hover:bg-red-700 transition duration-300">App Container</a>
         </div>
       </div>
     </div>
